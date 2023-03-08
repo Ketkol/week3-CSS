@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200&family=Dancing+Script:wght@500&display=swap');
+
+
+body {
+    background-color: rgb(218, 210, 154);
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bitter', serif;
+    font-family: 'Dancing Script', cursive;
+    color: brown;
+    
+}
+
+.ingredients {
+    font-size: 1.5rem;
+    font-family: 'Bitter', serif;
+    font-family: 'Dancing Script', cursive;
+    color: brown;
+}
+
+.instruction {
+    font-size: 1.5rem;
+    font-family: 'Bitter', serif;
+    font-family: 'Dancing Script', cursive;
+    color: brown;
+}
+.imgMain{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 400px;
+}
+
+.footer {
+    text-align: center;
+}

@@ -2,16 +2,33 @@
 
 
 body {
-    background-color: rgb(218, 210, 154);
+    background-color: rgb(233, 229, 201);
 }
 
 .heading {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Bitter', serif;
     font-family: 'Dancing Script', cursive;
     color: brown;
-    
+}
+
+span{
+    display: inline-block;
+    font-weight: bolder;
+    animation: mover 6s linear infinite;
+}
+@keyframes mover{
+    0%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
+    50%{
+        text-shadow: 0 0 30px rgba(0,0,0,0.30);
+        transform: translateX(30px);
+    }
+    100%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
 }
 
 .ingredients {
@@ -19,6 +36,11 @@ body {
     font-family: 'Bitter', serif;
     font-family: 'Dancing Script', cursive;
     color: brown;
+    position: relative;
+    top: -600px;
+    animation: dis 3s ease-in-out forwards;
+    animation-iteration-count: infinite;
+    
 }
 
 .instruction {
@@ -26,15 +48,35 @@ body {
     font-family: 'Bitter', serif;
     font-family: 'Dancing Script', cursive;
     color: brown;
+    position: relative;
+    top: -800px;
+    animation:dis 3s ease-in-out forwards;
+    animation-iteration-count: infinite;
 }
+
+@keyframes dis {
+    100% {top: 0;}
+}
+
+
 .imgMain{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 500px;
     height: 400px;
+    animation: picture 5s forwards infinite;
 }
 
+@keyframes picture {
+    0% {
+        border-radius: 0%;
+    }
+    100% {
+        border-radius: 100%;
+    }
+   
+}
 .footer {
     text-align: center;
 }
